@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Slidify the Shiny Application</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Slidify the Shiny Application">
+  <meta name="author" content="Shaoqing Ying">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Slidify the Shiny Application</h1>
+    <h2>Documentation for the Prediction of diamond price using Shiny</h2>
+    <p>Shaoqing Ying<br/>R Job</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Project Overview</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
+<li><p>This is a simple shiny application for the project of coursera course &quot;Developing Data Products&quot;.</p></li>
+<li><p>The application aimts at predicting the diamond price according to its mass.</p></li>
+<li><p>The regression model was chosen for the prediction based on the training of the data &quot;diamond&quot; from the package &quot;UsingR&quot;.</p></li>
+<li><p>You can find the application under the link: <a href="https://shaoqingy.shinyapps.io/myshinyapplication/">https://shaoqingy.shinyapps.io/myshinyapplication/</a></p></li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Project Operation</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
+<li><p>On the left side, the diamond mass in carat could be chosen for prediction</p></li>
+<li><p>On the right side, the graphic displays the real prices and predicted prices for different masses and also the linear regression.</p></li>
+<li><p>The predicted price for the given mass would be shown in the graphic with black point.</p></li>
+<li><p>The predicted price would also be shown below with numbers.</p></li>
+<li><p>There is also a simple documentation for the application below. </p></li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Data for Modelling</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code class="r">library(UsingR);data(diamond);head(diamond,3)
+</code></pre>
+
+<pre><code>##   carat price
+## 1  0.17   355
+## 2  0.16   328
+## 3  0.17   350
+</code></pre>
+
+<pre><code class="r">summary(diamond)
+</code></pre>
+
+<pre><code>##      carat            price       
+##  Min.   :0.1200   Min.   : 223.0  
+##  1st Qu.:0.1600   1st Qu.: 337.5  
+##  Median :0.1800   Median : 428.5  
+##  Mean   :0.2042   Mean   : 500.1  
+##  3rd Qu.:0.2500   3rd Qu.: 657.0  
+##  Max.   :0.3500   Max.   :1086.0
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Display Example</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>The predicted price for the selected diamond mass of 0.2 carat is: 507.79 $</li>
+</ul>
+
+<p><img src="figure/unnamed-chunk-2-1.png" alt="plot of chunk unnamed-chunk-2"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Project Overview'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Project Operation'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Data for Modelling'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Display Example'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
